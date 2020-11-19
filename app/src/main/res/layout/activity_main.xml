@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lapangan2"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showToast"
+        android:text="Toast Team A"
+        app:backgroundTint="@android:color/holo_green_light" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="countUp"
+        android:text="Count Team A"
+        app:backgroundTint="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00EDEDF1"
+        android:onClick="countUp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="170sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/show_count2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#003C3F41"
+        android:onClick="countUp2"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="170sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_count2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="countUp2"
+        android:text="Count Team B" />
+
+    <Button
+        android:id="@+id/button_toast2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showToast2"
+        android:text="Toast Team B" />
+
+    <TextView
+        android:id="@+id/developedBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by RFA"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
